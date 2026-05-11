@@ -8,14 +8,14 @@ app.use(cors());
 app.use(express.json());
 
 // ── Routes ──────────────────────────────────────────────────
-app.use('/api/auth',         require('./routes/auth.routes'));
-app.use('/api/users',        require('./routes/users.routes'));
-app.use('/api/categories',   require('./routes/categories.routes'));
-app.use('/api/ouvrages',     require('./routes/ouvrages.routes'));
-app.use('/api/panier',       require('./routes/panier.routes'));
-app.use('/api/commandes',    require('./routes/commandes.routes'));
-app.use('/api/listes',       require('./routes/listes.routes'));
-app.use('/api/commentaires', require('./routes/commentaires.routes'));
+app.use('/api/auth',         require('./src/routes/auth.routes'));
+app.use('/api/users',        require('./src/routes/users.routes'));
+app.use('/api/categories',   require('./src/routes/categories.routes'));
+app.use('/api/ouvrages',     require('./src/routes/ouvrages.routes'));
+app.use('/api/panier',       require('./src/routes/panier.routes'));
+app.use('/api/commandes',    require('./src/routes/commandes.routes'));
+app.use('/api/listes',       require('./src/routes/listes.routes'));
+app.use('/api/commentaires', require('./src/routes/commentaires.routes'));
 
 // ── 404 ─────────────────────────────────────────────────────
 app.use((req, res) => {
