@@ -100,4 +100,12 @@ export const getCommentairesPending = ()           => api.get('/commentaires');
 export const validerCommentaire     = (id, valide) =>
   api.put(`/commentaires/${id}/valider`, { valide });
 
+export const uploadImageOuvrage = (id, file) => {
+  const formData = new FormData();
+  formData.append('image', file);
+  return api.post(`/ouvrages/${id}/image`, formData, {
+    headers: { 'Content-Type': 'multipart/form-data' },
+  });
+};
+
 export default api;

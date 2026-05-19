@@ -93,12 +93,23 @@ const update = async (req, res, next) => {
 // DELETE /api/ouvrages/:id
 const remove = async (req, res, next) => {
   try {
-    const [result] = await db.query('DELETE FROM ouvrages WHERE id = ?', [req.params.id]);
+    const id = req.params.id;
+
+    // Supprimer les références dans panier_items et commande_items
+    await db.query('DELETE FROM panier_items WHERE ouvrage_id = ?', [id]);
+    await db.query('DELETE FROM liste_items WHERE ouvrage_id = ?', [id]);
+    // Ne pas supprimer commande_items — garder l'historique des commandes
+    // Mettre à null dans commande_items à la place
+    await db.query('UPDATE commande_items SET ouvrage_id = NULL WHERE ouvrage_id = ?', [id]);
+    await db.query('DELETE FROM avis WHERE ouvrage_id = ?', [id]);
+    await db.query('DELETE FROM commentaires WHERE ouvrage_id = ?', [id]);
+
+    const [result] = await db.query('DELETE FROM ouvrages WHERE id = ?', [id]);
     if (result.affectedRows === 0) return res.status(404).json({ message: 'Ouvrage introuvable.' });
+
     res.json({ message: 'Ouvrage supprimé.' });
   } catch (err) { next(err); }
 };
-
 // POST /api/ouvrages/:id/avis — client, vérif achat obligatoire
 const addAvis = async (req, res, next) => {
   try {
@@ -143,4 +154,23 @@ const addCommentaire = async (req, res, next) => {
   } catch (err) { next(err); }
 };
 
-module.exports = { getAll, getOne, create, update, remove, addAvis, addCommentaire };
+const uploadImage = async (req, res, next) => {
+  try {
+    if (!req.file) return res.status(400).json({ message: 'Aucune image fournie.' });
+
+    const imageUrl = `/uploads/${req.file.filename}`;
+    await db.query('UPDATE ouvrages SET image_url = ? WHERE id = ?', [imageUrl, req.params.id]);
+
+    res.json({
+      message: 'Image uploadée avec succès.',
+      image_url: imageUrl,
+      url_complete: `http://localhost:3000${imageUrl}`,
+    });
+  } catch (err) {
+    next(err);
+  }
+};
+
+// Ajoute uploadImage dans module.exports
+module.exports = { getAll, getOne, create, update, remove, addAvis, addCommentaire, uploadImage };
+

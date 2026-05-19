@@ -1,4 +1,5 @@
 require('dotenv').config();
+const path = require('path');
 const express = require('express');
 const cors    = require('cors');
 const app     = express();
@@ -6,7 +7,7 @@ const app     = express();
 // ── Middlewares globaux ──────────────────────────────────────
 app.use(cors());
 app.use(express.json());
-
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 // ── Routes ──────────────────────────────────────────────────
 app.use('/api/auth',         require('./src/routes/auth.routes'));
 app.use('/api/users',        require('./src/routes/users.routes'));

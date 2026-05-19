@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 15, 2026 at 03:00 PM
+-- Generation Time: May 19, 2026 at 07:31 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -41,28 +41,13 @@ CREATE TABLE `avis` (
 --
 
 INSERT INTO `avis` (`id`, `client_id`, `ouvrage_id`, `note`, `commentaire`, `date`) VALUES
-(1, 4, 1, 5, 'Magnifique référence, indispensable dans toute cuisine !', '2025-02-15 10:00:00'),
-(2, 4, 9, 4, 'Très pratique pour les soirs de semaine, recettes rapides.', '2025-02-16 11:00:00'),
-(3, 4, 10, 5, 'Le batch cooking a changé ma vie ! Je recommande vivement.', '2025-02-17 12:00:00'),
-(4, 4, 5, 4, 'Beau voyage culinaire, photos magnifiques.', '2025-02-18 09:00:00'),
-(5, 4, 7, 5, 'Parfait pour adopter une alimentation végétarienne.', '2025-03-10 10:00:00'),
-(6, 4, 3, 5, 'La bible de la pâtisserie, explications claires et précises.', '2025-05-12 11:00:00'),
-(7, 5, 3, 4, 'Excellent livre de pâtisserie, les explications sont très claires.', '2025-03-20 14:00:00'),
-(8, 5, 4, 3, 'Bon livre mais certaines recettes manquent de détails.', '2025-03-21 15:00:00'),
-(9, 5, 18, 5, 'Le chocolat selon Genin, un chef-d\'oeuvre absolu.', '2025-03-22 16:00:00'),
-(10, 6, 11, 4, 'Guide complet et bien organisé pour découvrir les vins.', '2025-04-10 10:00:00'),
-(11, 6, 12, 5, 'Enfin un guide pratique sur les accords mets-vins !', '2025-04-11 11:00:00'),
-(12, 6, 6, 4, 'Belles recettes d\'orient, très inspirant.', '2025-04-12 12:00:00'),
-(13, 7, 15, 5, 'La cuisine japonaise rendue accessible, superbe !', '2025-04-18 10:00:00'),
-(14, 7, 16, 4, 'Apprentissage des sushis facilité, très beau livre.', '2025-04-19 11:00:00'),
-(15, 7, 20, 5, 'Authentique et généreux, les tajines sont excellents.', '2025-04-20 12:00:00'),
-(16, 8, 9, 3, 'Bien mais certaines recettes prennent plus de 30 min.', '2025-04-25 10:00:00'),
-(17, 8, 10, 4, 'Très bonne organisation hebdomadaire.', '2025-04-26 11:00:00'),
-(18, 9, 13, 5, 'Le pain maison na plus de secrets grace a ce livre.', '2025-05-03 10:00:00'),
-(19, 9, 14, 4, 'Croissants réussis dès le premier essai !', '2025-05-04 11:00:00'),
-(20, 10, 2, 5, 'L\'encyclopédie gastronomique par excellence.', '2025-05-06 10:00:00'),
-(21, 10, 1, 4, 'Un classique indémodable, je recommande.', '2025-05-07 11:00:00'),
-(22, 11, 10, 4, 'Pratique pour organiser ses repas de la semaine.', '2025-05-08 10:00:00');
+(23, 4, 24, 5, 'La bible de la pâtisserie, explications claires et précises.', '2026-05-16 10:00:00'),
+(24, 5, 25, 4, 'Un classique indémodable, je recommande à tous.', '2026-05-17 11:00:00'),
+(25, 6, 26, 5, 'Beau voyage culinaire, photos magnifiques.', '2026-05-17 14:00:00'),
+(26, 7, 27, 4, 'Parfait pour adopter une alimentation végétarienne.', '2026-05-18 09:00:00'),
+(27, 8, 28, 3, 'Bien mais certaines recettes prennent plus de 30 min.', '2026-05-18 16:00:00'),
+(28, 9, 24, 5, 'Incroyable, j\'ai réussi des macarons du premier coup !', '2026-05-19 07:30:00'),
+(29, 10, 26, 4, 'Super pour découvrir les cuisines du monde.', '2026-05-19 08:30:00');
 
 -- --------------------------------------------------------
 
@@ -128,7 +113,17 @@ INSERT INTO `commandes` (`id`, `client_id`, `date`, `total`, `statut`, `adresse_
 (12, 6, '2025-05-09 16:30:00', 49.99, 'en_cours', '789 boul. Saint-Laurent, Montréal, QC H2Y 2Y9', 'standard', 'paypal', NULL, '2025-05-09 16:30:00', '2026-05-14 16:00:19'),
 (13, 5, '2025-05-10 09:45:00', 175.97, 'payee', '456 av. du Mont-Royal, Montréal, QC H2J 1W5', 'express', 'carte', NULL, '2025-05-10 09:45:00', '2026-05-14 16:00:19'),
 (14, 7, '2025-05-11 13:15:00', 63.00, 'en_cours', '321 rue Notre-Dame O, Montréal, QC H2Y 1T9', 'standard', 'carte', NULL, '2025-05-11 13:15:00', '2026-05-14 16:00:19'),
-(15, 8, '2025-05-12 10:00:00', 97.00, 'en_cours', '654 rue Sherbrooke E, Montréal, QC H2L 1K5', 'standard', 'carte', NULL, '2025-05-12 10:00:00', '2026-05-14 16:00:19');
+(15, 8, '2025-05-12 10:00:00', 97.00, 'en_cours', '654 rue Sherbrooke E, Montréal, QC H2L 1K5', 'standard', 'carte', NULL, '2025-05-12 10:00:00', '2026-05-14 16:00:19'),
+(16, 13, '2026-05-15 09:00:00', 84.00, 'payee', '45 rue Saint-Denis, Montréal, QC H2X 3K4', 'standard', 'carte', NULL, '2026-05-15 09:00:00', '2026-05-19 01:29:13'),
+(17, 14, '2026-05-16 10:30:00', 54.99, 'expediee', '12 av. Victoria, Montréal, QC H3Z 2M1', 'express', 'carte', NULL, '2026-05-16 10:30:00', '2026-05-19 01:29:13'),
+(18, 4, '2026-05-17 11:00:00', 112.00, 'payee', '123 rue Sainte-Catherine, Montréal, QC', 'standard', 'carte', NULL, '2026-05-17 11:00:00', '2026-05-19 01:29:13'),
+(19, 5, '2026-05-17 14:00:00', 57.00, 'en_cours', '456 av. du Mont-Royal, Montréal, QC', 'standard', 'paypal', NULL, '2026-05-17 14:00:00', '2026-05-19 01:29:13'),
+(20, 6, '2026-05-18 08:30:00', 30.00, 'en_cours', '789 boul. Saint-Laurent, Montréal, QC', 'standard', 'carte', NULL, '2026-05-18 08:30:00', '2026-05-19 01:29:13'),
+(21, 7, '2026-05-18 13:00:00', 79.99, 'payee', '321 rue Notre-Dame O, Montréal, QC', 'express', 'carte', NULL, '2026-05-18 13:00:00', '2026-05-19 01:29:13'),
+(22, 8, '2026-05-18 15:30:00', 55.00, 'en_cours', '654 rue Sherbrooke E, Montréal, QC', 'standard', 'carte', NULL, '2026-05-18 15:30:00', '2026-05-19 01:29:13'),
+(23, 9, '2026-05-19 07:00:00', 64.00, 'en_cours', '987 av. Papineau, Montréal, QC', 'standard', 'carte', NULL, '2026-05-19 07:00:00', '2026-05-19 01:29:13'),
+(24, 10, '2026-05-19 08:00:00', 49.99, 'payee', '147 rue de la Commune, Vieux-Montréal, QC', 'standard', 'carte', NULL, '2026-05-19 08:00:00', '2026-05-19 01:29:13'),
+(25, 11, '2026-05-19 09:15:00', 25.00, 'en_cours', '258 rue Wellington, Verdun, QC', 'standard', 'carte', NULL, '2026-05-19 09:15:00', '2026-05-19 01:29:13');
 
 -- --------------------------------------------------------
 
@@ -139,7 +134,7 @@ INSERT INTO `commandes` (`id`, `client_id`, `date`, `total`, `statut`, `adresse_
 CREATE TABLE `commande_items` (
   `id` int(11) NOT NULL,
   `commande_id` int(11) NOT NULL,
-  `ouvrage_id` int(11) NOT NULL,
+  `ouvrage_id` int(11) DEFAULT NULL,
   `quantite` int(11) NOT NULL CHECK (`quantite` > 0),
   `prix_unitaire` decimal(10,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -149,43 +144,61 @@ CREATE TABLE `commande_items` (
 --
 
 INSERT INTO `commande_items` (`id`, `commande_id`, `ouvrage_id`, `quantite`, `prix_unitaire`) VALUES
-(1, 1, 1, 1, 49.99),
-(2, 1, 9, 1, 24.99),
-(3, 1, 10, 1, 22.00),
-(4, 1, 5, 1, 32.00),
-(5, 2, 7, 1, 29.95),
-(6, 2, 10, 1, 22.00),
-(7, 2, 19, 1, 27.00),
-(8, 3, 3, 1, 55.00),
-(9, 3, 4, 1, 38.50),
-(10, 3, 18, 1, 48.00),
-(11, 4, 2, 1, 79.99),
-(12, 5, 11, 1, 42.00),
-(13, 5, 12, 1, 34.00),
-(14, 5, 6, 1, 28.00),
-(15, 6, 15, 1, 44.00),
-(16, 6, 16, 1, 58.00),
-(17, 6, 20, 1, 39.00),
-(18, 6, 6, 1, 28.00),
-(19, 7, 9, 1, 24.99),
-(20, 7, 10, 1, 22.00),
-(21, 7, 7, 1, 29.95),
-(22, 8, 13, 1, 36.00),
-(23, 8, 14, 1, 31.00),
-(24, 8, 19, 1, 27.00),
-(25, 9, 2, 1, 79.99),
-(26, 9, 1, 1, 49.99),
-(27, 10, 10, 2, 22.00),
-(28, 11, 3, 1, 55.00),
-(29, 11, 4, 1, 38.50),
-(30, 12, 1, 1, 49.99),
-(31, 13, 16, 1, 58.00),
-(32, 13, 15, 1, 44.00),
-(33, 13, 2, 1, 79.99),
-(34, 14, 13, 1, 36.00),
-(35, 14, 19, 1, 27.00),
-(36, 15, 11, 1, 42.00),
-(37, 15, 3, 1, 55.00);
+(1, 1, NULL, 1, 49.99),
+(2, 1, NULL, 1, 24.99),
+(3, 1, NULL, 1, 22.00),
+(4, 1, NULL, 1, 32.00),
+(5, 2, NULL, 1, 29.95),
+(6, 2, NULL, 1, 22.00),
+(7, 2, NULL, 1, 27.00),
+(8, 3, NULL, 1, 55.00),
+(9, 3, NULL, 1, 38.50),
+(10, 3, NULL, 1, 48.00),
+(11, 4, NULL, 1, 79.99),
+(12, 5, NULL, 1, 42.00),
+(13, 5, NULL, 1, 34.00),
+(14, 5, NULL, 1, 28.00),
+(15, 6, NULL, 1, 44.00),
+(16, 6, NULL, 1, 58.00),
+(17, 6, NULL, 1, 39.00),
+(18, 6, NULL, 1, 28.00),
+(19, 7, NULL, 1, 24.99),
+(20, 7, NULL, 1, 22.00),
+(21, 7, NULL, 1, 29.95),
+(22, 8, NULL, 1, 36.00),
+(23, 8, NULL, 1, 31.00),
+(24, 8, NULL, 1, 27.00),
+(25, 9, NULL, 1, 79.99),
+(26, 9, NULL, 1, 49.99),
+(27, 10, NULL, 2, 22.00),
+(28, 11, NULL, 1, 55.00),
+(29, 11, NULL, 1, 38.50),
+(30, 12, NULL, 1, 49.99),
+(31, 13, NULL, 1, 58.00),
+(32, 13, NULL, 1, 44.00),
+(33, 13, NULL, 1, 79.99),
+(34, 14, NULL, 1, 36.00),
+(35, 14, NULL, 1, 27.00),
+(36, 15, NULL, 1, 42.00),
+(37, 15, NULL, 1, 55.00),
+(38, 16, 26, 1, 32.00),
+(39, 16, 28, 1, 25.00),
+(40, 16, 27, 1, 30.00),
+(41, 17, 25, 1, 49.99),
+(42, 17, 24, 1, 55.00),
+(43, 18, 24, 1, 55.00),
+(44, 18, 26, 1, 32.00),
+(45, 18, 28, 1, 25.00),
+(46, 19, 27, 1, 30.00),
+(47, 19, 26, 1, 32.00),
+(48, 20, 28, 1, 25.00),
+(49, 20, NULL, 1, 39.00),
+(50, 21, 25, 1, 49.99),
+(51, 21, 28, 1, 25.00),
+(52, 22, 24, 1, 55.00),
+(53, 23, 26, 2, 32.00),
+(54, 24, 25, 1, 49.99),
+(55, 25, 28, 1, 25.00);
 
 -- --------------------------------------------------------
 
@@ -209,15 +222,11 @@ CREATE TABLE `commentaires` (
 --
 
 INSERT INTO `commentaires` (`id`, `client_id`, `ouvrage_id`, `contenu`, `valide`, `date_soumission`, `date_validation`, `valide_par`) VALUES
-(1, 4, 1, 'Un classique indémodable, je recommande à tous les passionnés de cuisine française.', 1, '2025-02-15 10:30:00', '2025-02-16 09:00:00', 2),
-(2, 5, 3, 'Excellent livre de pâtisserie, les explications sont très claires et les photos superbes.', 1, '2025-03-20 14:30:00', '2025-03-21 09:00:00', 2),
-(3, 6, 11, 'Ce guide des vins est remarquable, accessible même pour les débutants.', 1, '2025-04-10 10:30:00', '2025-04-11 09:00:00', 2),
-(4, 7, 15, 'La cuisine japonaise du quotidien enfin expliquée simplement !', 1, '2025-04-18 10:30:00', '2025-04-19 09:00:00', 2),
-(5, 8, 9, 'Pratique pour les soirs de semaine chargés.', 1, '2025-04-25 10:30:00', '2025-04-26 09:00:00', 2),
-(6, 9, 13, 'Mon pain fait maison est maintenant délicieux grace à ce livre.', 1, '2025-05-03 10:30:00', '2025-05-04 09:00:00', 2),
-(7, 4, 5, 'Commentaire en attente - Street food incroyable !', 0, '2025-05-10 10:00:00', NULL, NULL),
-(8, 5, 18, 'En attente - Le chocolat de Genin est divin.', 0, '2025-05-11 10:00:00', NULL, NULL),
-(9, 10, 2, 'En attente - L\'encyclopédie parfaite pour tout gastronome.', 0, '2025-05-12 10:00:00', NULL, NULL);
+(10, 4, 24, 'Ce livre de pâtisserie est exceptionnel, je le recommande à tous les passionnés.', 1, '2026-05-16 10:30:00', '2026-05-17 09:00:00', 2),
+(11, 5, 25, 'L\'Escoffier Moderne mérite vraiment son titre de référence classique.', 1, '2026-05-17 11:30:00', '2026-05-18 09:00:00', 2),
+(12, 6, 26, 'Street Food du Monde est une vraie invitation au voyage culinaire !', 1, '2026-05-17 14:30:00', '2026-05-18 09:00:00', 2),
+(13, 13, 28, 'Cuisine Express idéal pour les soirs de semaine chargés.', 0, '2026-05-19 07:00:00', NULL, NULL),
+(14, 14, 24, 'La pâtisserie française rendue accessible, bravo !', 0, '2026-05-19 09:00:00', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -255,20 +264,6 @@ CREATE TABLE `liste_items` (
   `quantite_souhaitee` int(11) NOT NULL DEFAULT 1 CHECK (`quantite_souhaitee` > 0)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `liste_items`
---
-
-INSERT INTO `liste_items` (`id`, `liste_id`, `ouvrage_id`, `quantite_souhaitee`) VALUES
-(1, 1, 2, 1),
-(2, 1, 3, 1),
-(3, 1, 16, 1),
-(4, 2, 11, 1),
-(5, 2, 15, 1),
-(6, 3, 2, 1),
-(7, 3, 18, 1),
-(8, 3, 20, 1);
-
 -- --------------------------------------------------------
 
 --
@@ -283,6 +278,7 @@ CREATE TABLE `ouvrages` (
   `description` text DEFAULT NULL,
   `prix` decimal(10,2) NOT NULL CHECK (`prix` >= 0),
   `stock` int(11) NOT NULL DEFAULT 0 CHECK (`stock` >= 0),
+  `image_url` varchar(255) DEFAULT NULL,
   `categorie_id` int(11) NOT NULL,
   `created_at` datetime NOT NULL DEFAULT current_timestamp(),
   `updated_at` datetime NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
@@ -292,27 +288,12 @@ CREATE TABLE `ouvrages` (
 -- Dumping data for table `ouvrages`
 --
 
-INSERT INTO `ouvrages` (`id`, `titre`, `auteur`, `isbn`, `description`, `prix`, `stock`, `categorie_id`, `created_at`, `updated_at`) VALUES
-(1, 'L\'Escoffier Moderne', 'Paul Bocuse', '978-2-01-001001-1', 'La référence de la cuisine française classique.', 49.99, 25, 1, '2025-01-10 00:00:00', '2026-05-14 16:00:19'),
-(2, 'Le Grand Larousse Gastronomique', 'Collectif', '978-2-03-584228-0', 'L\'encyclopédie incontournable de la gastronomie.', 79.99, 12, 1, '2025-01-10 00:00:00', '2026-05-14 16:00:19'),
-(3, 'Pâtisserie — L\'ultime référence', 'Christophe Felder', '978-2-01-200543-1', 'Plus de 200 recettes de pâtisserie détaillées pas à pas.', 55.00, 30, 2, '2025-01-10 00:00:00', '2026-05-14 16:00:19'),
-(4, 'Tartes et Tourtes', 'Pierre Hermé', '978-2-01-200600-1', 'L\'art des tartes sucrées et salées selon Pierre Hermé.', 38.50, 18, 2, '2025-01-10 00:00:00', '2026-05-14 16:00:19'),
-(5, 'Street Food du Monde', 'Lonely Planet', '978-2-81-610843-3', 'Les meilleures recettes street food des 5 continents.', 32.00, 45, 3, '2025-01-10 00:00:00', '2026-05-14 16:00:19'),
-(6, 'Épices et Saveurs d\'Orient', 'Fatima Hal', '978-2-01-300120-1', 'Un voyage culinaire à travers le Maghreb et le Moyen-Orient.', 28.00, 22, 3, '2025-01-10 00:00:00', '2026-05-14 16:00:19'),
-(7, 'Végétarien au quotidien', 'Marie Laforêt', '978-2-81-420300-1', 'Recettes végétariennes savoureuses pour toute la famille.', 29.95, 15, 4, '2025-01-10 00:00:00', '2026-05-14 16:00:19'),
-(8, 'Vegan — 200 recettes', 'Héloïse Martel', '978-2-01-400200-1', 'Cuisine vegan créative et gourmande.', 26.50, 0, 4, '2025-01-10 00:00:00', '2026-05-14 16:00:19'),
-(9, 'Cuisine Express 30 min', 'Cyril Lignac', '978-2-01-500100-1', 'Des recettes prêtes en 30 minutes pour les soirs pressés.', 24.99, 55, 5, '2025-01-10 00:00:00', '2026-05-14 16:00:19'),
-(10, 'Batch Cooking Facile', 'Julie Andrieu', '978-2-01-500200-1', 'Organisez votre semaine en cuisinant une fois.', 22.00, 1, 5, '2025-01-10 00:00:00', '2026-05-14 16:04:45'),
-(11, 'Le Guide des Vins de France', 'Michel Bettane', '978-2-01-600100-1', 'Le guide de référence pour découvrir les vins français.', 42.00, 20, 6, '2025-02-01 00:00:00', '2026-05-14 16:00:19'),
-(12, 'Accords Mets et Vins', 'Thierry Desseauve', '978-2-01-600200-1', 'Marier les vins avec les plats pour sublimer vos repas.', 34.00, 16, 6, '2025-02-01 00:00:00', '2026-05-14 16:00:19'),
-(13, 'Le Pain Maison', 'Eric Kayser', '978-2-01-700100-1', 'Fabriquer son pain artisanal à la maison, recettes et techniques.', 36.00, 28, 7, '2025-02-15 00:00:00', '2026-05-14 16:00:19'),
-(14, 'Viennoiseries & Brioches', 'Christophe Adam', '978-2-01-700200-1', 'Croissants, pains au chocolat et brioches comme un chef.', 31.00, 14, 7, '2025-02-15 00:00:00', '2026-05-14 16:00:19'),
-(15, 'Cuisine du Japon', 'Harumi Kurihara', '978-2-01-300300-1', 'Les secrets de la cuisine japonaise du quotidien.', 44.00, 20, 3, '2025-03-01 00:00:00', '2026-05-14 16:00:19'),
-(16, 'Sushi & Sashimi', 'Nobu Matsuhisa', '978-2-01-300400-1', 'Maîtrisez l\'art du sushi avec le chef Nobu.', 58.00, 8, 3, '2025-03-01 00:00:00', '2026-05-14 16:00:19'),
-(17, 'La Cuisine de Provence', 'René Berard', '978-2-01-001200-1', 'Les saveurs authentiques du Sud de la France.', 35.00, 22, 1, '2025-03-15 00:00:00', '2026-05-14 16:00:19'),
-(18, 'Chocolat — Grand Art', 'Jacques Genin', '978-2-01-200700-1', 'Ganaches, truffes et tablettes par le maître chocolatier.', 48.00, 10, 2, '2025-03-15 00:00:00', '2026-05-14 16:00:19'),
-(19, 'Salades Créatives', 'Yotam Ottolenghi', '978-2-01-400400-1', '100 salades originales et végétariennes pour toutes les saisons.', 27.00, 0, 4, '2025-04-01 00:00:00', '2026-05-14 16:03:52'),
-(20, 'Cuisine Marocaine', 'Paula Wolfert', '978-2-01-300500-1', 'Les recettes authentiques du Maroc, tajines et couscous.', 39.00, 0, 3, '2025-04-01 00:00:00', '2026-05-14 16:04:20');
+INSERT INTO `ouvrages` (`id`, `titre`, `auteur`, `isbn`, `description`, `prix`, `stock`, `image_url`, `categorie_id`, `created_at`, `updated_at`) VALUES
+(24, 'Pâtisserie — L\'ultime référence', 'Christophe Felder', '978-2-01-200543-1', '', 55.00, 30, '/uploads/ouvrage_1779168053280.jpg', 2, '2026-05-19 01:20:53', '2026-05-19 01:20:53'),
+(25, 'L\'Escoffier Moderne', 'Paul Bocuse', '978-2-01-001001-1', '', 49.99, 25, '/uploads/ouvrage_1779168202363.jpg', 1, '2026-05-19 01:23:22', '2026-05-19 01:23:22'),
+(26, 'Street Food du Monde', 'Lonely Planet', '978-2-81-610843-3', '', 32.00, 45, '/uploads/ouvrage_1779168269175.jpg', 3, '2026-05-19 01:24:29', '2026-05-19 01:24:29'),
+(27, 'Végétarien au quotidien', 'Marie Laforêt', '978-2-81-420300-1', '', 30.00, 15, '/uploads/ouvrage_1779168317943.jpg', 4, '2026-05-19 01:25:17', '2026-05-19 01:25:17'),
+(28, 'Cuisine Express 30 min', 'Cyril Lignac', '978-2-01-500100-1', '', 25.00, 55, '/uploads/ouvrage_1779168365593.jpg', 5, '2026-05-19 01:26:05', '2026-05-19 01:26:05');
 
 -- --------------------------------------------------------
 
@@ -351,17 +332,6 @@ CREATE TABLE `panier_items` (
   `prix_unitaire` decimal(10,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `panier_items`
---
-
-INSERT INTO `panier_items` (`id`, `panier_id`, `ouvrage_id`, `quantite`, `prix_unitaire`) VALUES
-(1, 1, 6, 1, 28.00),
-(2, 1, 17, 1, 35.00),
-(3, 2, 20, 2, 39.00),
-(4, 4, 13, 1, 36.00),
-(5, 4, 5, 1, 32.00);
-
 -- --------------------------------------------------------
 
 --
@@ -392,7 +362,12 @@ INSERT INTO `payments` (`id`, `commande_id`, `provider`, `provider_payment_id`, 
 (7, 9, 'stripe', 'pi_test_009', 'succeeded', 129.98, '2025-05-01 10:35:00'),
 (8, 10, 'stripe', 'pi_test_010', 'succeeded', 44.00, '2025-05-05 14:05:00'),
 (9, 11, 'stripe', 'pi_test_011', 'succeeded', 93.50, '2025-05-08 11:05:00'),
-(10, 13, 'stripe', 'pi_test_013', 'succeeded', 175.97, '2025-05-10 09:50:00');
+(10, 13, 'stripe', 'pi_test_013', 'succeeded', 175.97, '2025-05-10 09:50:00'),
+(11, 16, 'stripe', 'pi_test_016', 'succeeded', 84.00, '2026-05-15 09:05:00'),
+(12, 17, 'stripe', 'pi_test_017', 'succeeded', 54.99, '2026-05-16 10:35:00'),
+(13, 18, 'stripe', 'pi_test_018', 'succeeded', 112.00, '2026-05-17 11:05:00'),
+(14, 21, 'stripe', 'pi_test_021', 'succeeded', 79.99, '2026-05-18 13:05:00'),
+(15, 24, 'stripe', 'pi_test_024', 'succeeded', 49.99, '2026-05-19 08:05:00');
 
 -- --------------------------------------------------------
 
@@ -416,7 +391,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `nom`, `email`, `password_hash`, `role`, `actif`, `created_at`, `updated_at`) VALUES
-(1, 'Admin Principal', 'admin@livresgourmands.net', '$2b$10$nFc.2dXs3Lb11ZSp3IF4y.t4esfgk1zlfrYDmtup0po6gf1JyJ2ue', 'administrateur', 1, '2025-01-01 08:00:00', '2026-05-14 16:02:08'),
+(1, 'Admin Principal', 'admin@livresgourmands.net', '$2b$10$htMj.adQzqb6AoBykBI2DOeLakwGm2.FRzeztN7hWPo7YG2OxxgSS', 'administrateur', 1, '2025-01-01 08:00:00', '2026-05-18 20:32:06'),
 (2, 'Sophie Éditrice', 'editeur@livresgourmands.net', '$2b$10$m0r6ga0b5KegebvY1AY0VO.v.MOtPSPiqOh.V1cgjLHeFfhrVSIWm', 'editeur', 1, '2025-01-02 09:00:00', '2026-05-14 16:00:19'),
 (3, 'Marc Gestionnaire', 'gestionnaire@livresgourmands.net', '$2b$10$m0r6ga0b5KegebvY1AY0VO.v.MOtPSPiqOh.V1cgjLHeFfhrVSIWm', 'gestionnaire', 1, '2025-01-03 10:00:00', '2026-05-14 16:00:19'),
 (4, 'Alice Tremblay', 'alice@email.com', '$2b$10$m0r6ga0b5KegebvY1AY0VO.v.MOtPSPiqOh.V1cgjLHeFfhrVSIWm', 'client', 1, '2025-02-01 11:00:00', '2026-05-14 16:00:19'),
@@ -428,7 +403,8 @@ INSERT INTO `users` (`id`, `nom`, `email`, `password_hash`, `role`, `actif`, `cr
 (10, 'Gabrielle Roy', 'gabrielle@email.com', '$2b$10$m0r6ga0b5KegebvY1AY0VO.v.MOtPSPiqOh.V1cgjLHeFfhrVSIWm', 'client', 1, '2025-04-20 11:00:00', '2026-05-14 16:00:19'),
 (11, 'Hugo Bouchard', 'hugo@email.com', '$2b$10$m0r6ga0b5KegebvY1AY0VO.v.MOtPSPiqOh.V1cgjLHeFfhrVSIWm', 'client', 1, '2025-05-01 08:30:00', '2026-05-14 16:00:19'),
 (12, 'Isabelle Fortin', 'isabelle@email.com', '$2b$10$m0r6ga0b5KegebvY1AY0VO.v.MOtPSPiqOh.V1cgjLHeFfhrVSIWm', 'client', 0, '2025-05-15 09:00:00', '2026-05-14 16:00:19'),
-(13, 'Mohamed Nouaoury', 'mohamednouaoury2003@gmail.com', '$2b$10$nFc.2dXs3Lb11ZSp3IF4y.t4esfgk1zlfrYDmtup0po6gf1JyJ2ue', 'client', 1, '2026-05-14 16:01:37', '2026-05-14 16:01:37');
+(13, 'Mohamed Nouaoury', 'mohamednouaoury2003@gmail.com', '$2b$10$nFc.2dXs3Lb11ZSp3IF4y.t4esfgk1zlfrYDmtup0po6gf1JyJ2ue', 'client', 1, '2026-05-14 16:01:37', '2026-05-14 16:01:37'),
+(14, 'simo vines', 'simo@gmail.com', '$2b$10$htMj.adQzqb6AoBykBI2DOeLakwGm2.FRzeztN7hWPo7YG2OxxgSS', 'client', 1, '2026-05-18 20:31:45', '2026-05-18 20:31:45');
 
 --
 -- Indexes for dumped tables
@@ -543,7 +519,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `avis`
 --
 ALTER TABLE `avis`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `categories`
@@ -555,19 +531,19 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `commandes`
 --
 ALTER TABLE `commandes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `commande_items`
 --
 ALTER TABLE `commande_items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT for table `commentaires`
 --
 ALTER TABLE `commentaires`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `listes_cadeaux`
@@ -585,7 +561,7 @@ ALTER TABLE `liste_items`
 -- AUTO_INCREMENT for table `ouvrages`
 --
 ALTER TABLE `ouvrages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `panier`
@@ -603,13 +579,13 @@ ALTER TABLE `panier_items`
 -- AUTO_INCREMENT for table `payments`
 --
 ALTER TABLE `payments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Constraints for dumped tables
@@ -633,7 +609,7 @@ ALTER TABLE `commandes`
 --
 ALTER TABLE `commande_items`
   ADD CONSTRAINT `fk_commande_items_commande` FOREIGN KEY (`commande_id`) REFERENCES `commandes` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `fk_commande_items_ouvrage` FOREIGN KEY (`ouvrage_id`) REFERENCES `ouvrages` (`id`);
+  ADD CONSTRAINT `fk_commande_items_ouvrage` FOREIGN KEY (`ouvrage_id`) REFERENCES `ouvrages` (`id`) ON DELETE SET NULL;
 
 --
 -- Constraints for table `commentaires`
