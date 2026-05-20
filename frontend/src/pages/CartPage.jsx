@@ -11,12 +11,12 @@ export default function CartPage() {
   const { toasts, showToast } = useToast();
   const [ordering, setOrdering] = useState(false);
   const [orderSuccess, setOrderSuccess] = useState(false);
-
+const imgSrc = (url) => url?.startsWith('http') ? url : `http://localhost:3000${url}`
   const SHIPPING = totalPrice >= 49 ? 0 : 6.99;
   const TAX_RATE = 0.14975; // TPS + TVQ Québec
   const taxes = (totalPrice + SHIPPING) * TAX_RATE;
   const grandTotal = totalPrice + SHIPPING + taxes;
-
+  console.log(items);
   const handleOrder = async () => {
     if (!user) {
       showToast('Veuillez vous connecter pour passer une commande.', 'warning');
@@ -99,7 +99,7 @@ export default function CartPage() {
                   <Link to={`/livre/${item.id}`} aria-label={`Voir ${item.titre}`}>
                     <div style={{ width: 70, height: 95, borderRadius: 8, overflow: 'hidden', flexShrink: 0, background: 'var(--cream)' }}>
                       {item.image ? (
-                        <img src={item.image} alt={item.titre} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                        <img src={imgSrc(item.image)} alt={item.titre} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                       ) : (
                         <div className="d-flex align-items-center justify-content-center h-100">
                           <i className="bi bi-book" style={{ color: 'var(--muted)' }}></i>

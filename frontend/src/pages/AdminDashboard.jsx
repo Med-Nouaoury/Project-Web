@@ -9,30 +9,9 @@ import {
 import ToastContainer, { useToast } from '../components/Toast';
 
 const MOCK_BOOKS = [
-<<<<<<< Updated upstream
   { id: 1, titre: "L'Escoffier Moderne", auteur: 'Paul Bocuse', prix: 49.99, categorie_nom: 'Cuisine française', stock: 25 },
   { id: 2, titre: 'Le Grand Larousse Gastronomique', auteur: 'Collectif', prix: 79.99, categorie_nom: 'Cuisine française', stock: 12 },
   { id: 3, titre: "Pâtisserie — L'ultime référence", auteur: 'Christophe Felder', prix: 55.00, categorie_nom: 'Pâtisserie', stock: 30 },
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  { id: 1, titre: 'Le Grand Livre de la Pâtisserie', auteur: 'Pierre Hermé', prix: 49.99, categorie_nom: 'Pâtisserie', stock: 12 },
-  { id: 2, titre: 'Gastronomie Moléculaire', auteur: 'Ferran Adrià', prix: 62.00, categorie_nom: 'Gastronomie', stock: 5 },
-  { id: 3, titre: 'Saveurs du Maroc', auteur: 'Paula Wolfert', prix: 38.50, categorie_nom: 'Cuisine du monde', stock: 0 },
-  { id: 4, titre: "L'Art du Pain Artisan", auteur: 'Chad Robertson', prix: 44.95, categorie_nom: 'Boulangerie', stock: 8 },
-  { id: 5, titre: 'Encyclopédie des Vins', auteur: 'Jancis Robinson', prix: 89.99, categorie_nom: 'Vins', stock: 3 },
-  { id: 6, titre: 'Cuisine Végétarienne', auteur: 'Yotam Ottolenghi', prix: 41.00, categorie_nom: 'Végétarien', stock: 15 },
-=======
-  { id: 1, titre: "L'Escoffier Moderne", auteur: 'Paul Bocuse', prix: 49.99, categorie_nom: 'Cuisine française', stock: 25 },
-  { id: 2, titre: 'Le Grand Larousse Gastronomique', auteur: 'Collectif', prix: 79.99, categorie_nom: 'Cuisine française', stock: 12 },
-  { id: 3, titre: "Pâtisserie — L'ultime référence", auteur: 'Christophe Felder', prix: 55.00, categorie_nom: 'Pâtisserie', stock: 30 },
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
-=======
-  { id: 1, titre: "L'Escoffier Moderne", auteur: 'Paul Bocuse', prix: 49.99, categorie_nom: 'Cuisine française', stock: 25 },
-  { id: 2, titre: 'Le Grand Larousse Gastronomique', auteur: 'Collectif', prix: 79.99, categorie_nom: 'Cuisine française', stock: 12 },
-  { id: 3, titre: "Pâtisserie — L'ultime référence", auteur: 'Christophe Felder', prix: 55.00, categorie_nom: 'Pâtisserie', stock: 30 },
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
 ];
 const MOCK_ORDERS = [
   { id: 1, utilisateur: { prenom: 'Alice', nom: 'Tremblay' }, total: 107.99, statut: 'payee',    created_at: '2025-02-10T10:00:00Z' },
@@ -42,27 +21,9 @@ const MOCK_ORDERS = [
   { id: 5, utilisateur: { prenom: 'Emma',  nom: 'Gagnon'   }, total:  76.94, statut: 'payee',    created_at: '2025-04-18T15:45:00Z' },
 ];
 const MOCK_USERS = [
-<<<<<<< Updated upstream
   { id: 1, nom: 'Admin Principal', email: 'admin@livresgourmands.net',  role: 'administrateur', created_at: '2025-01-01' },
   { id: 2, nom: 'Sophie Éditrice', email: 'editeur@livresgourmands.net',role: 'editeur',        created_at: '2025-01-02' },
   { id: 3, nom: 'Alice Tremblay',  email: 'alice@email.com',            role: 'client',         created_at: '2025-02-01' },
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  { id: 1, nom: 'Admin Principal', email: 'admin@livresgourmands.net', role: 'administrateur', created_at: '2025-01-01' },
-  { id: 2, nom: 'Sophie Éditrice', email: 'editeur@livresgourmands.net', role: 'editeur', created_at: '2025-01-02' },
-  { id: 3, nom: 'Alice Tremblay', email: 'alice@email.com', role: 'client', created_at: '2025-02-01' },
-=======
-  { id: 1, nom: 'Admin Principal', email: 'admin@livresgourmands.net',  role: 'administrateur', created_at: '2025-01-01' },
-  { id: 2, nom: 'Sophie Éditrice', email: 'editeur@livresgourmands.net',role: 'editeur',        created_at: '2025-01-02' },
-  { id: 3, nom: 'Alice Tremblay',  email: 'alice@email.com',            role: 'client',         created_at: '2025-02-01' },
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
-=======
-  { id: 1, nom: 'Admin Principal', email: 'admin@livresgourmands.net',  role: 'administrateur', created_at: '2025-01-01' },
-  { id: 2, nom: 'Sophie Éditrice', email: 'editeur@livresgourmands.net',role: 'editeur',        created_at: '2025-01-02' },
-  { id: 3, nom: 'Alice Tremblay',  email: 'alice@email.com',            role: 'client',         created_at: '2025-02-01' },
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
 ];
 
 const STATUS_CONFIG = {
@@ -77,12 +38,14 @@ const STATUS_CONFIG = {
 const EMPTY_FORM = { titre: '', auteur: '', isbn: '', prix: '', categorie_id: '', stock: '', description: '', image_url: '' };
 
 const ACTIVITY = [
-  { color: '#3d8c52', text: 'Nouvelle commande créée',        sub: 'Alice Tremblay — 107,99 $', time: 'Il y a 12 min' },
-  { color: '#E8A838', text: "Stock faible : Saveurs du Maroc", sub: '0 exemplaires restants',   time: 'Il y a 34 min' },
-  { color: '#5c6bc0', text: 'Nouvel utilisateur inscrit',     sub: 'pierre.martin@mail.com',    time: 'Il y a 1h 08'  },
-  { color: '#C4593A', text: 'Commande annulée',               sub: 'David Côté — 159,97 $',     time: 'Il y a 2h 15'  },
-  { color: '#3d8c52', text: 'Commande expédiée',              sub: 'Bob Martin — 134,98 $',      time: 'Il y a 4h 10'  },
+  { color: '#3d8c52', text: 'Nouvelle commande créée',         sub: 'Alice Tremblay — 107,99 $', time: 'Il y a 12 min' },
+  { color: '#E8A838', text: "Stock faible : Saveurs du Maroc", sub: '0 exemplaires restants',    time: 'Il y a 34 min' },
+  { color: '#5c6bc0', text: 'Nouvel utilisateur inscrit',      sub: 'pierre.martin@mail.com',    time: 'Il y a 1h 08'  },
+  { color: '#C4593A', text: 'Commande annulée',                sub: 'David Côté — 159,97 $',     time: 'Il y a 2h 15'  },
+  { color: '#3d8c52', text: 'Commande expédiée',               sub: 'Bob Martin — 134,98 $',     time: 'Il y a 4h 10'  },
 ];
+
+const imgSrc = (url) => !url ? null : url.startsWith('http') ? url : `http://localhost:3000${url}`;
 
 function initials(a, b) {
   return ((a?.[0] || '') + (b?.[0] || '')).toUpperCase() || '??';
@@ -93,57 +56,21 @@ function StatusBadge({ statut }) {
   return <span className={`badge-admin ${cfg.cls}`}><i className={`bi ${cfg.icon}`}></i>{cfg.label}</span>;
 }
 
-<<<<<<< Updated upstream
-// ── Chart dessiné avec Canvas API natif (sans dépendance externe) ──
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-// ── Chart dessiné avec Canvas API natif (sans dépendance externe) ──
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
-=======
-// ── Chart dessiné avec Canvas API natif (sans dépendance externe) ──
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
 function drawBarChart(canvas, isDark) {
   const ctx = canvas.getContext('2d');
   const W = canvas.width = canvas.offsetWidth;
   const H = canvas.height = 180;
   const textCol = isDark ? 'rgba(255,255,255,.5)' : '#8A7F78';
   const gridCol = isDark ? 'rgba(255,255,255,.08)' : '#F0E8DF';
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  const labels = ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin'];
-  const delivered = [6800, 7200, 8100, 7600, 9200, 9400];
-  const pending   = [800, 600, 900, 700, 1100, 980];
-=======
-=======
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
-
   const labels = ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin'];
   const delivered = [6800, 7200, 8100, 7600, 9200, 9400];
   const pending   = [800,  600,  900,  700,  1100, 980];
-
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
-=======
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
   const padL = 52, padR = 16, padT = 16, padB = 32;
   const chartW = W - padL - padR;
   const chartH = H - padT - padB;
   const maxVal = 11000;
   const barGroupW = chartW / labels.length;
   const barW = barGroupW * 0.6;
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
   ctx.clearRect(0, 0, W, H);
   for (let i = 0; i <= 4; i++) {
     const y = padT + (chartH / 4) * i;
@@ -153,75 +80,16 @@ function drawBarChart(canvas, isDark) {
     ctx.fillStyle = textCol; ctx.font = '10px system-ui,sans-serif'; ctx.textAlign = 'right';
     ctx.fillText((val / 1000).toFixed(0) + 'k', padL - 6, y + 4);
   }
-=======
-=======
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
-
-  ctx.clearRect(0, 0, W, H);
-
-  // Grid lines
-  for (let i = 0; i <= 4; i++) {
-    const y = padT + (chartH / 4) * i;
-    const val = maxVal - (maxVal / 4) * i;
-    ctx.strokeStyle = gridCol;
-    ctx.lineWidth = 1;
-    ctx.beginPath(); ctx.moveTo(padL, y); ctx.lineTo(W - padR, y); ctx.stroke();
-    ctx.fillStyle = textCol;
-    ctx.font = '10px DM Sans, sans-serif';
-    ctx.textAlign = 'right';
-    ctx.fillText((val / 1000).toFixed(0) + 'k', padL - 6, y + 4);
-  }
-
-  // Bars
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
-=======
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
   labels.forEach((label, i) => {
     const x = padL + i * barGroupW + (barGroupW - barW) / 2;
     const totalH = ((delivered[i] + pending[i]) / maxVal) * chartH;
     const delivH = (delivered[i] / maxVal) * chartH;
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
     const pendH  = (pending[i] / maxVal) * chartH;
     ctx.fillStyle = '#E8A838';
     ctx.beginPath(); ctx.roundRect(x, padT + chartH - totalH, barW, pendH, [3, 3, 0, 0]); ctx.fill();
     ctx.fillStyle = '#C4593A';
     ctx.fillRect(x, padT + chartH - totalH + pendH, barW, delivH);
     ctx.fillStyle = textCol; ctx.font = '10px system-ui,sans-serif'; ctx.textAlign = 'center';
-=======
-=======
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
-    const pendH  = (pending[i]   / maxVal) * chartH;
-
-    // Pending (top)
-    ctx.fillStyle = '#E8A838';
-    ctx.beginPath();
-    ctx.roundRect(x, padT + chartH - totalH, barW, pendH, [3, 3, 0, 0]);
-    ctx.fill();
-
-    // Delivered (bottom)
-    ctx.fillStyle = '#C4593A';
-    ctx.fillRect(x, padT + chartH - totalH + pendH, barW, delivH);
-
-    // Label
-    ctx.fillStyle = textCol;
-    ctx.font = '10px DM Sans, sans-serif';
-    ctx.textAlign = 'center';
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
-=======
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
     ctx.fillText(label, x + barW / 2, H - padB + 16);
   });
 }
@@ -237,40 +105,12 @@ function drawDonutChart(canvas, isDark) {
   ctx.clearRect(0, 0, SIZE, SIZE);
   data.forEach((val, i) => {
     const angle = (val / 100) * 2 * Math.PI;
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
     ctx.beginPath(); ctx.moveTo(cx, cy); ctx.arc(cx, cy, r, start, start + angle); ctx.closePath();
     ctx.fillStyle = colors[i]; ctx.fill();
     start += angle;
   });
   ctx.beginPath(); ctx.arc(cx, cy, ri, 0, 2 * Math.PI);
   ctx.fillStyle = isDark ? '#1a1a1a' : '#fff'; ctx.fill();
-=======
-=======
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
-    ctx.beginPath();
-    ctx.moveTo(cx, cy);
-    ctx.arc(cx, cy, r, start, start + angle);
-    ctx.closePath();
-    ctx.fillStyle = colors[i];
-    ctx.fill();
-    start += angle;
-  });
-  // Hole
-  ctx.beginPath();
-  ctx.arc(cx, cy, ri, 0, 2 * Math.PI);
-  ctx.fillStyle = isDark ? '#1a1a1a' : '#fff';
-  ctx.fill();
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
-=======
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
 }
 
 export default function AdminDashboard() {
@@ -291,17 +131,8 @@ export default function AdminDashboard() {
   const [searchBooks, setSearchBooks] = useState('');
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [chartsDrawn, setChartsDrawn] = useState(false);
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
   const [imageFile, setImageFile] = useState(null);
   const [imagePreview, setImagePreview] = useState(null);
-=======
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
-=======
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
 
   if (!user || !isAdmin) return <Navigate to="/login" replace />;
 
@@ -336,34 +167,10 @@ export default function AdminDashboard() {
     setChartsDrawn(false);
   }, [section]);
 
-<<<<<<< Updated upstream
-  // Dessiner les charts après le render
   useEffect(() => {
     if (section !== 'overview' || chartsDrawn) return;
     const timer = setTimeout(() => {
-      const barCanvas  = document.getElementById('adm-bar-chart');
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  useEffect(() => {
-    if (section !== 'overview' || chartsDrawn) return;
-    const timer = setTimeout(() => {
-      const barCanvas = document.getElementById('adm-bar-chart');
-=======
-  // Dessiner les charts après le render
-  useEffect(() => {
-    if (section !== 'overview' || chartsDrawn) return;
-    const timer = setTimeout(() => {
-      const barCanvas  = document.getElementById('adm-bar-chart');
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
-=======
-  // Dessiner les charts après le render
-  useEffect(() => {
-    if (section !== 'overview' || chartsDrawn) return;
-    const timer = setTimeout(() => {
-      const barCanvas  = document.getElementById('adm-bar-chart');
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
+      const barCanvas   = document.getElementById('adm-bar-chart');
       const donutCanvas = document.getElementById('adm-donut-chart');
       if (!barCanvas || !donutCanvas) return;
       const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -374,45 +181,18 @@ export default function AdminDashboard() {
     return () => clearTimeout(timer);
   }, [section, chartsDrawn]);
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  const closeModal = () => {
-    setModal(null);
-    setImageFile(null);
-    setImagePreview(null);
-  };
+  const closeModal = () => { setModal(null); setImageFile(null); setImagePreview(null); };
 
   const openAdd = () => {
-    setForm(EMPTY_FORM);
-    setEditBook(null);
-    setImageFile(null);
-    setImagePreview(null);
+    setForm(EMPTY_FORM); setEditBook(null);
+    setImageFile(null); setImagePreview(null);
     setModal('add');
   };
 
   const openEdit = (b) => {
     setForm({ ...b, prix: String(b.prix), stock: String(b.stock), categorie_id: String(b.categorie_id || '') });
-    setEditBook(b);
-    setImageFile(null);
-    setImagePreview(null);
+    setEditBook(b); setImageFile(null); setImagePreview(null);
     setModal('edit');
-=======
-=======
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
-  const openAdd = () => { setForm(EMPTY_FORM); setEditBook(null); setModal('add'); };
-  const openEdit = (b) => {
-    setForm({ ...b, prix: String(b.prix), stock: String(b.stock), categorie_id: String(b.categorie_id || '') });
-    setEditBook(b); setModal('edit');
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
-=======
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
   };
 
   const handleSave = async (e) => {
@@ -431,13 +211,9 @@ export default function AdminDashboard() {
         await uploadImageOuvrage(savedId, imageFile);
         showToast('Image uploadée !', 'success');
       }
-      closeModal();
-      loadBooks();
-    } catch {
-      showToast("Erreur lors de l'enregistrement.", 'error');
-    } finally {
-      setSaving(false);
-    }
+      closeModal(); loadBooks();
+    } catch { showToast("Erreur lors de l'enregistrement.", 'error'); }
+    finally { setSaving(false); }
   };
 
   const handleDelete = async (id) => {
@@ -449,6 +225,31 @@ export default function AdminDashboard() {
   const handleStatusChange = async (orderId, statut) => {
     try { await updateCommandeStatus(orderId, statut); setOrders((p) => p.map((o) => o.id === orderId ? { ...o, statut } : o)); showToast('Statut mis à jour !', 'success'); }
     catch { showToast('Impossible de changer le statut.', 'error'); }
+  };
+
+  const handleExport = () => {
+    const data = orders.length > 0 ? orders : MOCK_ORDERS;
+    if (!data.length) { showToast('Aucune commande à exporter.', 'error'); return; }
+    const rows = [
+      ['N°', 'Client', 'Email', 'Total ($)', 'Date', 'Statut'],
+      ...data.map((o) => [
+        o.id,
+        `${o.utilisateur?.prenom || ''} ${o.utilisateur?.nom || ''}`.trim(),
+        o.utilisateur?.email || '',
+        parseFloat(o.total).toFixed(2),
+        new Date(o.created_at).toLocaleDateString('fr-CA'),
+        STATUS_CONFIG[o.statut]?.label || o.statut,
+      ])
+    ];
+    const csv = rows.map(r => r.map(v => `"${String(v).replace(/"/g, '""')}"`).join(',')).join('\n');
+    const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `commandes_${new Date().toISOString().split('T')[0]}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
+    showToast('Export téléchargé !', 'success');
   };
 
   const filteredBooks = books.filter((b) =>
@@ -551,19 +352,9 @@ export default function AdminDashboard() {
         @media(max-width:767px){.sidebar-overlay.show{display:block}}
         .adm-empty{text-align:center;padding:3rem 1rem;color:var(--muted)}
         .adm-empty i{font-size:2.5rem;display:block;margin-bottom:.75rem}
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
         .img-preview{width:70px;height:90px;object-fit:cover;border-radius:8px;margin-bottom:8px;display:block;border:1px solid var(--border)}
-        .img-upload-box{border:2px dashed var(--border);border-radius:10px;padding:12px;text-align:center;cursor:pointer;transition:border-color .15s}
-        .img-upload-box:hover{border-color:var(--terracotta)}
         .book-thumb{width:36px;height:46px;object-fit:cover;border-radius:4px;border:1px solid var(--border)}
-=======
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
-=======
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
+        .book-thumb-placeholder{width:36px;height:46px;border-radius:4px;background:var(--cream);display:flex;align-items:center;justify-content:center;border:1px solid var(--border)}
       `}</style>
 
       <div className="admin-shell">
@@ -611,26 +402,14 @@ export default function AdminDashboard() {
               </div>
             </div>
             <div className="adm-topbar-actions">
-              <button className="adm-btn" onClick={() => showToast('Exportation lancée…', 'info')}><i className="bi bi-download"></i>Exporter</button>
+              <button className="adm-btn" onClick={handleExport}><i className="bi bi-download"></i>Exporter</button>
               <button className="adm-btn primary" onClick={() => { setSection('books'); openAdd(); }}><i className="bi bi-plus"></i>Nouveau livre</button>
             </div>
           </div>
 
           <div className="adm-content">
 
-<<<<<<< Updated upstream
-            {/* ═══ OVERVIEW ═══ */}
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
             {/* OVERVIEW */}
-=======
-            {/* ═══ OVERVIEW ═══ */}
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
-=======
-            {/* ═══ OVERVIEW ═══ */}
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
             {section === 'overview' && (
               <>
                 <div className="adm-stats">
@@ -658,7 +437,6 @@ export default function AdminDashboard() {
                     </div>
                     <canvas id="adm-bar-chart" style={{ width: '100%', height: 180, display: 'block' }} />
                   </div>
-
                   <div className="adm-card">
                     <div className="adm-card-header">
                       <div>
@@ -681,18 +459,6 @@ export default function AdminDashboard() {
                   </div>
                 </div>
 
-<<<<<<< Updated upstream
-                {/* Last orders */}
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-                {/* Last orders */}
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
-=======
-                {/* Last orders */}
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
                 <div className="adm-card" style={{ padding: 0, overflow: 'hidden' }}>
                   <div className="adm-card-header" style={{ padding: '14px 16px', borderBottom: '1px solid var(--border)' }}>
                     <div className="adm-card-title">Dernières commandes</div>
@@ -737,7 +503,6 @@ export default function AdminDashboard() {
                       </table>
                     </div>
                   </div>
-
                   <div className="adm-card">
                     <div className="adm-card-header"><div className="adm-card-title">Activité récente</div></div>
                     <div className="activity-list">
@@ -757,19 +522,7 @@ export default function AdminDashboard() {
               </>
             )}
 
-<<<<<<< Updated upstream
-            {/* ═══ BOOKS ═══ */}
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
             {/* BOOKS */}
-=======
-            {/* ═══ BOOKS ═══ */}
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
-=======
-            {/* ═══ BOOKS ═══ */}
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
             {section === 'books' && (
               <div className="adm-card" style={{ padding: 0, overflow: 'hidden' }}>
                 <div className="adm-card-header" style={{ padding: '14px 16px', borderBottom: '1px solid var(--border)' }}>
@@ -785,26 +538,14 @@ export default function AdminDashboard() {
                 {loading ? <div className="text-center py-5"><div className="spinner-border spinner-terra" role="status"><span className="visually-hidden">Chargement…</span></div></div> : (
                   <div className="adm-table-wrap">
                     <table className="adm-table">
-<<<<<<< Updated upstream
-                      <thead><tr><th>Titre</th><th>Auteur</th><th>Catégorie</th><th>Prix</th><th>Stock</th><th>Actions</th></tr></thead>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
                       <thead><tr><th>Image</th><th>Titre</th><th>Auteur</th><th>Catégorie</th><th>Prix</th><th>Stock</th><th>Actions</th></tr></thead>
-=======
-                      <thead><tr><th>Titre</th><th>Auteur</th><th>Catégorie</th><th>Prix</th><th>Stock</th><th>Actions</th></tr></thead>
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
-=======
-                      <thead><tr><th>Titre</th><th>Auteur</th><th>Catégorie</th><th>Prix</th><th>Stock</th><th>Actions</th></tr></thead>
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
                       <tbody>
                         {filteredBooks.map((b) => (
                           <tr key={b.id}>
                             <td>
                               {b.image_url
-                                ? <img src={b.image_url?.startsWith('http') ? b.image_url : `http://localhost:3000${b.image_url}`} alt={b.titre} className="book-thumb" />
-                                : <div className="book-thumb" style={{ background: 'var(--cream)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><i className="bi bi-image" style={{ color: 'var(--muted)', fontSize: '.85rem' }}></i></div>
+                                ? <img src={imgSrc(b.image_url)} alt={b.titre} className="book-thumb" />
+                                : <div className="book-thumb-placeholder"><i className="bi bi-image" style={{ color: 'var(--muted)', fontSize: '.85rem' }}></i></div>
                               }
                             </td>
                             <td style={{ fontWeight: 600, maxWidth: 180, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{b.titre}</td>
@@ -820,19 +561,7 @@ export default function AdminDashboard() {
                             </td>
                           </tr>
                         ))}
-<<<<<<< Updated upstream
-                        {filteredBooks.length === 0 && <tr><td colSpan={6} className="adm-empty"><i className="bi bi-search"></i>Aucun ouvrage trouvé.</td></tr>}
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
                         {filteredBooks.length === 0 && <tr><td colSpan={7} className="adm-empty"><i className="bi bi-search"></i>Aucun ouvrage trouvé.</td></tr>}
-=======
-                        {filteredBooks.length === 0 && <tr><td colSpan={6} className="adm-empty"><i className="bi bi-search"></i>Aucun ouvrage trouvé.</td></tr>}
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
-=======
-                        {filteredBooks.length === 0 && <tr><td colSpan={6} className="adm-empty"><i className="bi bi-search"></i>Aucun ouvrage trouvé.</td></tr>}
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
                       </tbody>
                     </table>
                   </div>
@@ -840,19 +569,7 @@ export default function AdminDashboard() {
               </div>
             )}
 
-<<<<<<< Updated upstream
-            {/* ═══ ORDERS ═══ */}
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
             {/* ORDERS */}
-=======
-            {/* ═══ ORDERS ═══ */}
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
-=======
-            {/* ═══ ORDERS ═══ */}
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
             {section === 'orders' && (
               <div className="adm-card" style={{ padding: 0, overflow: 'hidden' }}>
                 <div className="adm-card-header" style={{ padding: '14px 16px', borderBottom: '1px solid var(--border)' }}>
@@ -882,19 +599,7 @@ export default function AdminDashboard() {
               </div>
             )}
 
-<<<<<<< Updated upstream
-            {/* ═══ USERS ═══ */}
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
             {/* USERS */}
-=======
-            {/* ═══ USERS ═══ */}
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
-=======
-            {/* ═══ USERS ═══ */}
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
             {section === 'users' && (
               <div className="adm-card" style={{ padding: 0, overflow: 'hidden' }}>
                 <div className="adm-card-header" style={{ padding: '14px 16px', borderBottom: '1px solid var(--border)' }}>
@@ -927,17 +632,7 @@ export default function AdminDashboard() {
       {/* MODAL Add/Edit */}
       {modal && (
         <div className="modal show d-block" style={{ background: 'rgba(0,0,0,.55)', backdropFilter: 'blur(6px)' }} role="dialog" aria-modal="true">
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
           <div className="modal-dialog modal-lg modal-dialog-centered" style={{ maxWidth: 720 }}>
-=======
-=======
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
-          <div className="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
             <div className="modal-content" style={{ borderRadius: 'var(--radius-lg)', border: 'none' }}>
               <div className="modal-header" style={{ borderBottom: '1px solid var(--border)' }}>
                 <h5 className="modal-title" style={{ fontFamily: 'var(--font-display)', fontWeight: 800 }}>
@@ -948,59 +643,36 @@ export default function AdminDashboard() {
               <form onSubmit={handleSave}>
                 <div className="modal-body">
                   <div className="row g-3">
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-                    {/* Titre */}
                     <div className="col-md-6">
                       <label className="form-label" style={{ fontWeight: 600, fontSize: '.87rem' }}>Titre *</label>
                       <input type="text" className="form-control" value={form.titre || ''} onChange={(e) => setForm(f => ({ ...f, titre: e.target.value }))} required style={{ borderRadius: 10, borderColor: 'var(--border)' }} />
                     </div>
-
-                    {/* Auteur */}
                     <div className="col-md-6">
                       <label className="form-label" style={{ fontWeight: 600, fontSize: '.87rem' }}>Auteur *</label>
                       <input type="text" className="form-control" value={form.auteur || ''} onChange={(e) => setForm(f => ({ ...f, auteur: e.target.value }))} required style={{ borderRadius: 10, borderColor: 'var(--border)' }} />
                     </div>
-
-                    {/* ISBN */}
                     <div className="col-md-6">
                       <label className="form-label" style={{ fontWeight: 600, fontSize: '.87rem' }}>ISBN *</label>
                       <input type="text" className="form-control" value={form.isbn || ''} onChange={(e) => setForm(f => ({ ...f, isbn: e.target.value }))} required style={{ borderRadius: 10, borderColor: 'var(--border)' }} />
                     </div>
-
-                    {/* Catégorie ID */}
                     <div className="col-md-6">
                       <label className="form-label" style={{ fontWeight: 600, fontSize: '.87rem' }}>Catégorie ID *</label>
                       <input type="number" className="form-control" value={form.categorie_id || ''} onChange={(e) => setForm(f => ({ ...f, categorie_id: e.target.value }))} required min={1} placeholder="1=Cuisine fr, 2=Pâtisserie…" style={{ borderRadius: 10, borderColor: 'var(--border)' }} />
                     </div>
-
-                    {/* Prix */}
                     <div className="col-md-6">
                       <label className="form-label" style={{ fontWeight: 600, fontSize: '.87rem' }}>Prix ($) *</label>
                       <input type="number" className="form-control" value={form.prix || ''} onChange={(e) => setForm(f => ({ ...f, prix: e.target.value }))} required min={0} step="0.01" style={{ borderRadius: 10, borderColor: 'var(--border)' }} />
                     </div>
-
-                    {/* Stock */}
                     <div className="col-md-6">
                       <label className="form-label" style={{ fontWeight: 600, fontSize: '.87rem' }}>Stock *</label>
                       <input type="number" className="form-control" value={form.stock || ''} onChange={(e) => setForm(f => ({ ...f, stock: e.target.value }))} required min={0} style={{ borderRadius: 10, borderColor: 'var(--border)' }} />
                     </div>
-
-                    {/* Image upload */}
                     <div className="col-12">
                       <label className="form-label" style={{ fontWeight: 600, fontSize: '.87rem' }}>Image de couverture</label>
                       <div className="d-flex align-items-start gap-3">
-                        {/* Preview */}
                         <div style={{ flexShrink: 0 }}>
                           {(imagePreview || form.image_url) ? (
-                            <img
-                              src={imagePreview || (form.image_url?.startsWith('http') ? form.image_url : `http://localhost:3000${form.image_url}`)}
-                              alt="Aperçu couverture"
-                              className="img-preview"
-                            />
+                            <img src={imagePreview || imgSrc(form.image_url)} alt="Aperçu" className="img-preview" />
                           ) : (
                             <div className="img-preview" style={{ background: 'var(--cream)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 4 }}>
                               <i className="bi bi-image" style={{ fontSize: '1.4rem', color: 'var(--muted)' }}></i>
@@ -1008,12 +680,8 @@ export default function AdminDashboard() {
                             </div>
                           )}
                         </div>
-                        {/* Input + info */}
                         <div style={{ flex: 1 }}>
-                          <input
-                            type="file"
-                            className="form-control"
-                            accept="image/jpeg,image/png,image/webp"
+                          <input type="file" className="form-control" accept="image/jpeg,image/png,image/webp"
                             onChange={(e) => {
                               const file = e.target.files[0];
                               if (!file) return;
@@ -1022,50 +690,16 @@ export default function AdminDashboard() {
                             }}
                             style={{ borderRadius: 10, borderColor: 'var(--border)', marginBottom: 6 }}
                           />
-                          <small style={{ color: 'var(--muted)', fontSize: '.72rem', display: 'block' }}>
-                            JPG, PNG ou WebP · max 5 MB
-                          </small>
-                          {imageFile && (
-                            <small style={{ color: '#3d8c52', fontSize: '.72rem', display: 'block', marginTop: 2 }}>
-                              <i className="bi bi-check-circle me-1"></i>{imageFile.name}
-                            </small>
-                          )}
-                          {!imageFile && form.image_url && (
-                            <small style={{ color: 'var(--muted)', fontSize: '.72rem', display: 'block', marginTop: 2 }}>
-                              <i className="bi bi-image me-1"></i>Image actuelle conservée si aucun nouveau fichier sélectionné
-                            </small>
-                          )}
+                          <small style={{ color: 'var(--muted)', fontSize: '.72rem', display: 'block' }}>JPG, PNG ou WebP · max 5 MB</small>
+                          {imageFile && <small style={{ color: '#3d8c52', fontSize: '.72rem', display: 'block', marginTop: 2 }}><i className="bi bi-check-circle me-1"></i>{imageFile.name}</small>}
+                          {!imageFile && form.image_url && <small style={{ color: 'var(--muted)', fontSize: '.72rem', display: 'block', marginTop: 2 }}><i className="bi bi-image me-1"></i>Image actuelle conservée</small>}
                         </div>
                       </div>
                     </div>
-
-                    {/* Description */}
-=======
-=======
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
-                    {[['titre','Titre *','text',true],['auteur','Auteur *','text',true],['isbn','ISBN *','text',true],['prix','Prix ($) *','number',true],['stock','Stock *','number',true],['image_url',"URL image",'url',false]].map(([key, label, type, req]) => (
-                      <div className="col-md-6" key={key}>
-                        <label className="form-label" style={{ fontWeight: 600, fontSize: '.87rem' }}>{label}</label>
-                        <input type={type} className="form-control" value={form[key] || ''} onChange={(e) => setForm((f) => ({ ...f, [key]: e.target.value }))} required={req} min={type === 'number' ? 0 : undefined} step={key === 'prix' ? '0.01' : undefined} style={{ borderRadius: 10, borderColor: 'var(--border)' }} />
-                      </div>
-                    ))}
-                    <div className="col-md-6">
-                      <label className="form-label" style={{ fontWeight: 600, fontSize: '.87rem' }}>Catégorie ID *</label>
-                      <input type="number" className="form-control" value={form.categorie_id || ''} onChange={(e) => setForm((f) => ({ ...f, categorie_id: e.target.value }))} required min={1} placeholder="1=Cuisine fr, 2=Pâtisserie…" style={{ borderRadius: 10, borderColor: 'var(--border)' }} />
-                    </div>
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
-=======
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
                     <div className="col-12">
                       <label className="form-label" style={{ fontWeight: 600, fontSize: '.87rem' }}>Description</label>
                       <textarea className="form-control" rows={4} value={form.description || ''} onChange={(e) => setForm(f => ({ ...f, description: e.target.value }))} style={{ borderRadius: 10, borderColor: 'var(--border)', resize: 'none' }}></textarea>
                     </div>
-
                   </div>
                 </div>
                 <div className="modal-footer" style={{ borderTop: '1px solid var(--border)' }}>
@@ -1090,19 +724,7 @@ export default function AdminDashboard() {
                   <i className="bi bi-trash" style={{ fontSize: '1.5rem', color: 'var(--terracotta)' }}></i>
                 </div>
                 <h5 style={{ fontFamily: 'var(--font-display)', fontSize: '1.1rem' }}>Confirmer la suppression</h5>
-<<<<<<< Updated upstream
-                <p style={{ fontSize: '.88rem', color: 'var(--muted)', marginTop: '.5rem' }}>Supprimer <strong>« {confirmDelete.titre} »</strong> ?</p>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
                 <p style={{ fontSize: '.88rem', color: 'var(--muted)', marginTop: '.5rem' }}>Supprimer <strong>« {confirmDelete.titre} »</strong> ? Action irréversible.</p>
-=======
-                <p style={{ fontSize: '.88rem', color: 'var(--muted)', marginTop: '.5rem' }}>Supprimer <strong>« {confirmDelete.titre} »</strong> ?</p>
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
-=======
-                <p style={{ fontSize: '.88rem', color: 'var(--muted)', marginTop: '.5rem' }}>Supprimer <strong>« {confirmDelete.titre} »</strong> ?</p>
->>>>>>> 12e15fd037c8fb75904f59fbd8053674553be318
->>>>>>> Stashed changes
                 <div className="d-flex gap-2 justify-content-center mt-3">
                   <button className="btn btn-outline-secondary btn-sm" onClick={() => setConfirmDelete(null)}>Annuler</button>
                   <button className="btn btn-danger btn-sm" onClick={() => handleDelete(confirmDelete.id)}><i className="bi bi-trash me-1"></i>Supprimer</button>

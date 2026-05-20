@@ -48,7 +48,7 @@ export default function ProductPage() {
   const [reviewForm, setReviewForm] = useState({ note: 5, commentaire: '' });
   const [submittingReview, setSubmittingReview] = useState(false);
   const [activeTab, setActiveTab] = useState('desc');
-
+const imgSrc = (url) => url?.startsWith('http') ? url : `http://localhost:3000${url}`
   const inCart = items.find((i) => i.id === book?.id);
   const stock = book?.stock ?? book?.quantite_stock ?? 0;
   const outOfStock = stock <= 0;
@@ -147,7 +147,7 @@ export default function ProductPage() {
             <div className="product-img-main" style={{ aspectRatio: '3/4', overflow: 'hidden' }}>
               {book.image_url || book.image ? (
                 <img
-                  src={book.image_url || book.image}
+                  src={imgSrc(book.image_url) || book.image}
                   alt={book.titre}
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 />

@@ -24,7 +24,7 @@ export default function BookCard({ book, onToast }) {
     onToast?.(`"${book.titre}" ajouté au panier !`);
     setTimeout(() => setAdding(false), 600);
   };
-
+  const imgSrc = (url) => url?.startsWith('http') ? url : `http://localhost:3000${url}`
   const avgNote = book.note_moyenne ? parseFloat(book.note_moyenne).toFixed(1) : null;
 
   return (
@@ -33,14 +33,14 @@ export default function BookCard({ book, onToast }) {
         <div className="book-img-wrap">
           {book.image_url || book.image ? (
             <img
-              src={book.image_url || book.image}
+              src={imgSrc(book.image_url) || book.image}
               alt={book.titre}
               loading="lazy"
             />
           ) : (
             <div className="d-flex flex-column align-items-center justify-content-center" style={{ color: 'rgba(45,27,14,.3)' }}>
               <i className="bi bi-book" style={{ fontSize: '2.5rem' }}></i>
-              <span style={{ fontSize: '.7rem', marginTop: '.3rem' }}>Pas d'image</span>
+              <span style={{ fontSize: '.7rem', marginTop: '.3rem' }}>Pas d image</span>
             </div>
           )}
           <span

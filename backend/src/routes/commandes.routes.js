@@ -6,7 +6,7 @@ const validate = require('../middlewares/validate.middleware');
 
 router.post('/',
   authenticate,
-  [body('adresse_livraison').trim().notEmpty().withMessage('L\'adresse de livraison est requise.')],
+  [[body('adresse_livraison').optional()],],
   validate,
   ctrl.create
 );
@@ -17,7 +17,7 @@ router.get('/:id', authenticate, ctrl.getOne);
 router.put('/:id/status',
   authenticate,
   authorize('administrateur', 'gestionnaire'),
-  [body('statut').isIn(['en_cours','payee','annulee','expediee']).withMessage('Statut invalide.')],
+  [[body('statut').isIn(['en_cours','payee','annulee','expediee','livree']).withMessage('Statut invalide.')],],
   validate,
   ctrl.updateStatus
 );

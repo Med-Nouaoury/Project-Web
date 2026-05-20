@@ -48,7 +48,7 @@ export default function CataloguePage() {
   const [stockOnly, setStockOnly] = useState(false);
   const [searchQ, setSearchQ] = useState(searchParams.get('q') || '');
   const [viewMode, setViewMode] = useState('grid');
-
+const imgSrc = (url) => url?.startsWith('http') ? url : `http://localhost:3000${url}`
   // Fetch all books once
   useEffect(() => {
     setLoading(true);
@@ -483,7 +483,7 @@ export default function CataloguePage() {
                       <Link to={`/livre/${book.id}`} style={{ flexShrink: 0 }}>
                         <div style={{ width: 60, height: 80, borderRadius: 8, overflow: 'hidden', background: 'var(--cream)' }}>
                           {book.image_url ? (
-                            <img src={book.image_url} alt={book.titre} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            <img src={imgSrc(book.image_url)} alt={book.titre} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                           ) : (
                             <div className="d-flex align-items-center justify-content-center h-100">
                               <i className="bi bi-book" style={{ color: 'var(--muted)' }}></i>

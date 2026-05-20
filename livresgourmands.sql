@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 19, 2026 at 07:31 AM
+-- Generation Time: May 20, 2026 at 06:52 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -47,7 +47,24 @@ INSERT INTO `avis` (`id`, `client_id`, `ouvrage_id`, `note`, `commentaire`, `dat
 (26, 7, 27, 4, 'Parfait pour adopter une alimentation végétarienne.', '2026-05-18 09:00:00'),
 (27, 8, 28, 3, 'Bien mais certaines recettes prennent plus de 30 min.', '2026-05-18 16:00:00'),
 (28, 9, 24, 5, 'Incroyable, j\'ai réussi des macarons du premier coup !', '2026-05-19 07:30:00'),
-(29, 10, 26, 4, 'Super pour découvrir les cuisines du monde.', '2026-05-19 08:30:00');
+(29, 10, 26, 4, 'Super pour découvrir les cuisines du monde.', '2026-05-19 08:30:00'),
+(30, 5, 24, 5, 'Je suis pâtissier amateur depuis 10 ans et ce livre m\'a appris des techniques que je ne connaissais pas. Les explications pas à pas avec photos sont incomparables. Mes entremets ont atteint un niveau professionnel grâce à cet ouvrage.', '2026-05-17 09:00:00'),
+(31, 6, 24, 4, 'Excellent livre, très complet. Certaines recettes sont techniques et demandent du matériel spécifique, mais les résultats valent vraiment l\'effort. La recette de l\'opéra est parfaite.', '2026-05-18 11:00:00'),
+(32, 7, 24, 5, 'Le meilleur livre de pâtisserie que j\'aie jamais acheté. Les macarons du premier coup, c\'est possible grâce aux conseils ultra-détaillés de Felder. Je l\'offre à toute ma famille.', '2026-05-19 10:00:00'),
+(33, 4, 25, 5, 'Un monument de la cuisine française. Je l\'utilise comme référence depuis des années dans ma cuisine professionnelle. La sauce beurre blanc de la page 234 est définitive — rien à y changer.', '2026-05-18 08:00:00'),
+(34, 6, 25, 4, 'Très belle mise à jour du classique d\'Escoffier par Bocuse. Les techniques de base sont expliquées avec rigueur. Idéal pour les personnes qui veulent vraiment maîtriser la cuisine française.', '2026-05-19 09:00:00'),
+(35, 8, 25, 5, 'Je suis cuisinier de formation et ce livre reste sur mon plan de travail tous les jours. Une référence absolue que tout cuisinier sérieux doit posséder.', '2026-05-19 11:00:00'),
+(36, 4, 26, 4, 'Livre magnifique avec des photos époustouflantes. Les recettes sont authentiques — j\'ai fait les tacos al pastor et c\'était exactement comme au Mexique. Quelques ingrédients sont difficiles à trouver mais ça vaut le détour.', '2026-05-18 14:00:00'),
+(37, 5, 26, 5, 'Un vrai coup de cœur ! Chaque page est une invitation au voyage. Les banh mi vietnamiens sont devenus notre plat du dimanche. Les explications sur les cultures culinaires locales ajoutent une vraie valeur au livre.', '2026-05-19 07:00:00'),
+(38, 8, 26, 4, 'Très bel ouvrage pour les amoureux de voyage et de cuisine. Les recettes sont bien adaptées pour les cuisines occidentales tout en gardant l\'authenticité. Je recommande !', '2026-05-19 12:00:00'),
+(39, 5, 27, 5, 'Ce livre a complètement transformé ma façon de cuisiner végétarien. Fini les plats fades — chaque recette est généreuse en saveurs et en textures. Le curry de pois chiches et les lasagnes aux légumes grillés sont devenus des classiques à la maison.', '2026-05-18 10:00:00'),
+(40, 9, 27, 4, 'Très bon livre pour débuter la cuisine végétarienne. Les recettes sont accessibles et les résultats bluffants. J\'ai particulièrement apprécié les conseils nutritionnels qui prouvent qu\'on peut manger végéta sans se priver.', '2026-05-19 08:00:00'),
+(41, 11, 27, 5, 'Marie Laforêt est une vraie pionnière. Ce livre prouve haut et fort que la cuisine végétale peut être festive, créative et délicieuse. Je l\'offre à tous mes amis qui veulent réduire leur consommation de viande.', '2026-05-19 10:30:00'),
+(42, 4, 28, 4, 'Exactement ce que je cherchais pour les soirs de semaine. Les recettes sont vraiment rapides et savoureuses. Le poulet citron-thym et les pâtes aux courgettes sont parfaits. Attention : certaines recettes dépassent légèrement les 30 min si on est débutant.', '2026-05-17 20:00:00'),
+(43, 5, 28, 5, 'Ce livre a changé mes habitudes alimentaires ! Avant je commandais souvent des pizzas le soir — maintenant je cuisine en 25 minutes avec ce livre. Les astuces de Cyril Lignac pour gagner du temps sont vraiment efficaces.', '2026-05-18 19:00:00'),
+(44, 9, 28, 4, 'Très bon rapport qualité-temps. Les recettes sont bien expliquées et adaptées aux cuisiniers de tous niveaux. J\'aurais aimé plus de recettes végétariennes mais dans l\'ensemble c\'est excellent.', '2026-05-19 06:00:00'),
+(45, 11, 28, 5, 'Mon livre de cuisine préféré depuis des années. Cyril Lignac a le don de rendre la cuisine accessible et gourmande. Le risotto express est aussi bon qu\'un risotto classique qui prend 45 minutes !', '2026-05-19 11:30:00'),
+(46, 13, 26, 2, 'SOOOOOOOOOOO BAD', '2026-05-20 00:48:33');
 
 -- --------------------------------------------------------
 
@@ -123,7 +140,9 @@ INSERT INTO `commandes` (`id`, `client_id`, `date`, `total`, `statut`, `adresse_
 (22, 8, '2026-05-18 15:30:00', 55.00, 'en_cours', '654 rue Sherbrooke E, Montréal, QC', 'standard', 'carte', NULL, '2026-05-18 15:30:00', '2026-05-19 01:29:13'),
 (23, 9, '2026-05-19 07:00:00', 64.00, 'en_cours', '987 av. Papineau, Montréal, QC', 'standard', 'carte', NULL, '2026-05-19 07:00:00', '2026-05-19 01:29:13'),
 (24, 10, '2026-05-19 08:00:00', 49.99, 'payee', '147 rue de la Commune, Vieux-Montréal, QC', 'standard', 'carte', NULL, '2026-05-19 08:00:00', '2026-05-19 01:29:13'),
-(25, 11, '2026-05-19 09:15:00', 25.00, 'en_cours', '258 rue Wellington, Verdun, QC', 'standard', 'carte', NULL, '2026-05-19 09:15:00', '2026-05-19 01:29:13');
+(25, 11, '2026-05-19 09:15:00', 25.00, 'en_cours', '258 rue Wellington, Verdun, QC', 'standard', 'carte', NULL, '2026-05-19 09:15:00', '2026-05-19 01:29:13'),
+(26, 1, '2026-05-20 00:14:29', 115.00, 'en_cours', 'Non spécifiée', 'standard', 'carte', NULL, '2026-05-20 00:14:29', '2026-05-20 00:14:29'),
+(27, 1, '2026-05-20 00:15:02', 249.95, 'expediee', 'Non spécifiée', 'standard', 'carte', NULL, '2026-05-20 00:15:02', '2026-05-20 00:18:19');
 
 -- --------------------------------------------------------
 
@@ -198,7 +217,10 @@ INSERT INTO `commande_items` (`id`, `commande_id`, `ouvrage_id`, `quantite`, `pr
 (52, 22, 24, 1, 55.00),
 (53, 23, 26, 2, 32.00),
 (54, 24, 25, 1, 49.99),
-(55, 25, 28, 1, 25.00);
+(55, 25, 28, 1, 25.00),
+(56, 26, 28, 1, 25.00),
+(57, 26, 27, 3, 30.00),
+(58, 27, 25, 5, 49.99);
 
 -- --------------------------------------------------------
 
@@ -226,7 +248,13 @@ INSERT INTO `commentaires` (`id`, `client_id`, `ouvrage_id`, `contenu`, `valide`
 (11, 5, 25, 'L\'Escoffier Moderne mérite vraiment son titre de référence classique.', 1, '2026-05-17 11:30:00', '2026-05-18 09:00:00', 2),
 (12, 6, 26, 'Street Food du Monde est une vraie invitation au voyage culinaire !', 1, '2026-05-17 14:30:00', '2026-05-18 09:00:00', 2),
 (13, 13, 28, 'Cuisine Express idéal pour les soirs de semaine chargés.', 0, '2026-05-19 07:00:00', NULL, NULL),
-(14, 14, 24, 'La pâtisserie française rendue accessible, bravo !', 0, '2026-05-19 09:00:00', NULL, NULL);
+(14, 14, 24, 'La pâtisserie française rendue accessible, bravo !', 0, '2026-05-19 09:00:00', NULL, NULL),
+(16, 5, 24, 'Le livre de Felder est une véritable encyclopédie de la pâtisserie. Je le consulte chaque semaine depuis 3 ans et je découvre encore de nouvelles techniques. Un investissement qui vaut chaque dollar.', 1, '2026-05-17 09:30:00', '2026-05-18 08:00:00', 2),
+(17, 8, 25, 'L\'Escoffier Moderne de Bocuse est une référence que tout cuisinier sérieux doit avoir dans sa bibliothèque. Les bases y sont expliquées avec une précision rare.', 1, '2026-05-19 11:30:00', '2026-05-19 14:00:00', 2),
+(18, 5, 26, 'Street Food du Monde est bien plus qu\'un livre de recettes — c\'est un carnet de voyage culinaire. Les photos sont magnifiques et les recettes authentiques.', 1, '2026-05-19 07:30:00', '2026-05-19 14:00:00', 2),
+(19, 11, 27, 'Végétarien au quotidien de Marie Laforêt m\'a convaincu que manger végétarien peut être délicieux et satisfaisant. Je ne retournerai pas en arrière !', 1, '2026-05-19 10:45:00', '2026-05-19 14:00:00', 2),
+(20, 11, 28, 'Cuisine Express 30 min a révolutionné mes soirées. Je rentre du travail et en 25 minutes j\'ai un repas digne d\'un restaurant sur la table.', 0, '2026-05-19 12:00:00', NULL, NULL),
+(21, 10, 27, 'J\'ai offert ce livre à ma sœur qui souhaitait manger moins de viande. Elle l\'adore et cuisine végétarien 4 soirs par semaine maintenant.', 0, '2026-05-19 13:00:00', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -249,7 +277,8 @@ CREATE TABLE `listes_cadeaux` (
 INSERT INTO `listes_cadeaux` (`id`, `nom`, `proprietaire_id`, `code_partage`, `date_creation`) VALUES
 (1, 'Ma liste anniversaire 2025', 4, 'alice2025anniv123456', '2025-03-01 10:00:00'),
 (2, 'Cadeaux Noel cuisine', 5, 'bob2025noel12345678', '2025-04-01 10:00:00'),
-(3, 'Wishlist gastronomie', 6, 'claire2025gastro1234', '2025-04-15 10:00:00');
+(3, 'Wishlist gastronomie', 6, 'claire2025gastro1234', '2025-04-15 10:00:00'),
+(4, 'Ma liste test', 4, '21cadd11cab744ddb39f', '2026-05-20 00:05:17');
 
 -- --------------------------------------------------------
 
@@ -289,11 +318,11 @@ CREATE TABLE `ouvrages` (
 --
 
 INSERT INTO `ouvrages` (`id`, `titre`, `auteur`, `isbn`, `description`, `prix`, `stock`, `image_url`, `categorie_id`, `created_at`, `updated_at`) VALUES
-(24, 'Pâtisserie — L\'ultime référence', 'Christophe Felder', '978-2-01-200543-1', '', 55.00, 30, '/uploads/ouvrage_1779168053280.jpg', 2, '2026-05-19 01:20:53', '2026-05-19 01:20:53'),
-(25, 'L\'Escoffier Moderne', 'Paul Bocuse', '978-2-01-001001-1', '', 49.99, 25, '/uploads/ouvrage_1779168202363.jpg', 1, '2026-05-19 01:23:22', '2026-05-19 01:23:22'),
-(26, 'Street Food du Monde', 'Lonely Planet', '978-2-81-610843-3', '', 32.00, 45, '/uploads/ouvrage_1779168269175.jpg', 3, '2026-05-19 01:24:29', '2026-05-19 01:24:29'),
-(27, 'Végétarien au quotidien', 'Marie Laforêt', '978-2-81-420300-1', '', 30.00, 15, '/uploads/ouvrage_1779168317943.jpg', 4, '2026-05-19 01:25:17', '2026-05-19 01:25:17'),
-(28, 'Cuisine Express 30 min', 'Cyril Lignac', '978-2-01-500100-1', '', 25.00, 55, '/uploads/ouvrage_1779168365593.jpg', 5, '2026-05-19 01:26:05', '2026-05-19 01:26:05');
+(24, 'Pâtisserie — L\'ultime référence', 'Christophe Felder', '978-2-01-200543-1', 'La référence absolue de la pâtisserie française signée Christophe Felder. Cet ouvrage monumental de plus de 900 pages rassemble toutes les techniques fondamentales et les recettes emblématiques de la pâtisserie classique et moderne. Des bases incontournables comme la pâte feuilletée, la crème pâtissière et la génoise, jusqu\'aux entremets sophistiqués, macarons et pièces montées — tout y est expliqué avec une clarté et une précision exceptionnelles. Illustré de milliers de photos étape par étape, ce livre est un véritable compagnon de vie pour tout passionné de sucre.', 55.00, 30, '/uploads/ouvrage_1779168053280.jpg', 2, '2026-05-19 01:20:53', '2026-05-20 00:47:32'),
+(25, 'L\'Escoffier Moderne', 'Paul Bocuse', '978-2-01-001001-1', 'Un hommage moderne au légendaire Auguste Escoffier, revisité par le grand Paul Bocuse. Ce classique de la cuisine française réunit les 500 recettes fondamentales de la gastronomie hexagonale : sauces mères, consommés, viandes braisées, poissons en croûte de sel, soufflés et entremets raffinés. Chaque recette est présentée avec ses variations contemporaines, permettant aux cuisiniers d\'aujourd\'hui d\'ancrer leur pratique dans une tradition séculaire tout en l\'adaptant aux goûts actuels. Un livre de chevet indispensable pour tout professionnel ou amateur sérieux de cuisine française.', 49.99, 20, '/uploads/ouvrage_1779168202363.jpg', 1, '2026-05-19 01:23:22', '2026-05-20 00:47:32'),
+(26, 'Street Food du Monde', 'Lonely Planet', '978-2-81-610843-3', 'Partez à la découverte des saveurs du monde entier avec ce guide gourmand incontournable signé Lonely Planet. De la street food thaïlandaise aux tacos mexicains, en passant par les banh mi vietnamiens, les falafel libanais et les arepas colombiennes — 50 pays, 200 recettes authentiques, directement inspirées des marchés, ruelles et étals de rue. Chaque chapitre plonge dans la culture culinaire locale avec des anecdotes, des conseils de voyage et des astuces pour reproduire ces plats chez soi avec les ingrédients disponibles en épicerie. Un voyage culinaire sans frontières.', 32.00, 45, '/uploads/ouvrage_1779168269175.jpg', 3, '2026-05-19 01:24:29', '2026-05-20 00:47:32'),
+(27, 'Végétarien au quotidien', 'Marie Laforêt', '978-2-81-420300-1', 'Marie Laforêt, pionnière de la cuisine végétale en France, signe ici un livre de référence pour adopter une alimentation végétarienne savoureuse et équilibrée au quotidien. Plus de 350 recettes créatives et accessibles, du petit-déjeuner au dessert, en passant par des dîners complets et des repas de fête. Des burgers de lentilles aux lasagnes aux légumes grillés, des currys de pois chiches aux tartes rustiques de saison — chaque recette prouve que cuisiner sans viande peut être généreux, festif et absolument délicieux. Avec des conseils nutritionnels et des substitutions pratiques.', 30.00, 12, '/uploads/ouvrage_1779168317943.jpg', 4, '2026-05-19 01:25:17', '2026-05-20 00:47:32'),
+(28, 'Cuisine Express 30 min', 'Cyril Lignac', '978-2-01-500100-1', 'Le maître de la cuisine du quotidien, Cyril Lignac, partage ses 100 meilleures recettes réalisables en 30 minutes chrono sans sacrifier le goût ni la qualité. Des pâtes crémeuses au saumon fumé, des poulets rôtis express, des woks de légumes croquants, des soupes veloutées et des desserts rapides — chaque recette est conçue pour les soirs de semaine chargés où l\'on veut manger bien sans passer des heures en cuisine. Avec ses astuces de chef pour gagner du temps, ses conseils sur les ingrédients à toujours avoir dans son frigo et ses tours de main professionnels, ce livre change la vie.', 25.00, 66, '/uploads/ouvrage_1779168365593.jpg', 5, '2026-05-19 01:26:05', '2026-05-20 00:47:32');
 
 -- --------------------------------------------------------
 
@@ -404,7 +433,8 @@ INSERT INTO `users` (`id`, `nom`, `email`, `password_hash`, `role`, `actif`, `cr
 (11, 'Hugo Bouchard', 'hugo@email.com', '$2b$10$m0r6ga0b5KegebvY1AY0VO.v.MOtPSPiqOh.V1cgjLHeFfhrVSIWm', 'client', 1, '2025-05-01 08:30:00', '2026-05-14 16:00:19'),
 (12, 'Isabelle Fortin', 'isabelle@email.com', '$2b$10$m0r6ga0b5KegebvY1AY0VO.v.MOtPSPiqOh.V1cgjLHeFfhrVSIWm', 'client', 0, '2025-05-15 09:00:00', '2026-05-14 16:00:19'),
 (13, 'Mohamed Nouaoury', 'mohamednouaoury2003@gmail.com', '$2b$10$nFc.2dXs3Lb11ZSp3IF4y.t4esfgk1zlfrYDmtup0po6gf1JyJ2ue', 'client', 1, '2026-05-14 16:01:37', '2026-05-14 16:01:37'),
-(14, 'simo vines', 'simo@gmail.com', '$2b$10$htMj.adQzqb6AoBykBI2DOeLakwGm2.FRzeztN7hWPo7YG2OxxgSS', 'client', 1, '2026-05-18 20:31:45', '2026-05-18 20:31:45');
+(14, 'simo vines', 'simo@gmail.com', '$2b$10$htMj.adQzqb6AoBykBI2DOeLakwGm2.FRzeztN7hWPo7YG2OxxgSS', 'client', 1, '2026-05-18 20:31:45', '2026-05-18 20:31:45'),
+(15, 'Test Runner', 'runner_1779249916986@test.com', '$2b$10$Qh7zfYXydYn.9mxHEdHTK.wSg5IHxtccmYSkPZNayhPAjaX5Hln7G', 'client', 1, '2026-05-20 00:05:17', '2026-05-20 00:05:17');
 
 --
 -- Indexes for dumped tables
@@ -519,7 +549,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `avis`
 --
 ALTER TABLE `avis`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `categories`
@@ -531,31 +561,31 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `commandes`
 --
 ALTER TABLE `commandes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `commande_items`
 --
 ALTER TABLE `commande_items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT for table `commentaires`
 --
 ALTER TABLE `commentaires`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `listes_cadeaux`
 --
 ALTER TABLE `listes_cadeaux`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `liste_items`
 --
 ALTER TABLE `liste_items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `ouvrages`
@@ -585,7 +615,7 @@ ALTER TABLE `payments`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- Constraints for dumped tables
