@@ -48,7 +48,7 @@ export default function CataloguePage() {
   const [stockOnly, setStockOnly] = useState(false);
   const [searchQ, setSearchQ] = useState(searchParams.get('q') || '');
   const [viewMode, setViewMode] = useState('grid');
-const imgSrc = (url) => url?.startsWith('http') ? url : `http://localhost:3000${url}`
+const imgSrc = (url) => url?.startsWith('http') ? url : `https://livregourmands-app.onrender.com${url}`
   // Fetch all books once
   useEffect(() => {
     setLoading(true);

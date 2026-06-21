@@ -11,7 +11,7 @@ export default function CartPage() {
   const { toasts, showToast } = useToast();
   const [ordering, setOrdering] = useState(false);
   const [orderSuccess, setOrderSuccess] = useState(false);
-const imgSrc = (url) => url?.startsWith('http') ? url : `http://localhost:3000${url}`
+const imgSrc = (url) => url?.startsWith('http') ? url : `https://livregourmands-app.onrender.com${url}`
   const SHIPPING = totalPrice >= 49 ? 0 : 6.99;
   const TAX_RATE = 0.14975; // TPS + TVQ Québec
   const taxes = (totalPrice + SHIPPING) * TAX_RATE;

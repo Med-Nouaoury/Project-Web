@@ -45,7 +45,7 @@ const ACTIVITY = [
   { color: '#3d8c52', text: 'Commande expédiée',               sub: 'Bob Martin — 134,98 $',     time: 'Il y a 4h 10'  },
 ];
 
-const imgSrc = (url) => !url ? null : url.startsWith('http') ? url : `http://localhost:3000${url}`;
+const imgSrc = (url) => !url ? null : url.startsWith('http') ? url : `https://livregourmands-app.onrender.com${url}`;
 
 function initials(a, b) {
   return ((a?.[0] || '') + (b?.[0] || '')).toUpperCase() || '??';

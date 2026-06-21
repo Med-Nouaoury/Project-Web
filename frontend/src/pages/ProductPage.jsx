@@ -48,7 +48,7 @@ export default function ProductPage() {
   const [reviewForm, setReviewForm] = useState({ note: 5, commentaire: '' });
   const [submittingReview, setSubmittingReview] = useState(false);
   const [activeTab, setActiveTab] = useState('desc');
-const imgSrc = (url) => url?.startsWith('http') ? url : `http://localhost:3000${url}`
+const imgSrc = (url) => url?.startsWith('http') ? url : `https://livregourmands-app.onrender.com${url}`
   const inCart = items.find((i) => i.id === book?.id);
   const stock = book?.stock ?? book?.quantite_stock ?? 0;
   const outOfStock = stock <= 0;

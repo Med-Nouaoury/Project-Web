@@ -24,7 +24,7 @@ export default function BookCard({ book, onToast }) {
     onToast?.(`"${book.titre}" ajouté au panier !`);
     setTimeout(() => setAdding(false), 600);
   };
-  const imgSrc = (url) => url?.startsWith('http') ? url : `http://localhost:3000${url}`
+  const imgSrc = (url) => url?.startsWith('http') ? url : `https://livregourmands-app.onrender.com${url}`
   const avgNote = book.note_moyenne ? parseFloat(book.note_moyenne).toFixed(1) : null;
 
   return (
